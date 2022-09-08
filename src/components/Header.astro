@@ -6,15 +6,15 @@ const {} = Astro.props;
 ---
 
 <header
-  class="sticky top-0 z-40 flex-none mx-auto w-full md:backdrop-blur-sm"
+  class="fixed top-0 z-40 flex-none mx-auto w-full md:backdrop-blur-sm"
 >
   <div
     class="py-3 px-3 mx-auto w-full md:flex md:justify-between max-w-6xl md:px-4"
   >
-    <div class="flex flex-row-reverse justify-between">
+    <div class="flex justify-end">
       <div class="flex items-center md:hidden">
         <button
-          class="ml-1.5 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center transition"
+          class="ml-1.5 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg text-sm p-2.5 inline-flex items-center transition"
           aria-label="Toggle Menu"
           data-aw-toggle-menu
         >
@@ -22,7 +22,7 @@ const {} = Astro.props;
         </button>
         <button
           type="button"
-          class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+          class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
           aria-label="Toggle between Dark and Light mode"
           data-aw-toggle-color-scheme
         >
@@ -31,7 +31,7 @@ const {} = Astro.props;
       </div>
     </div>
     <nav
-      class="items-center w-full md:w-auto hidden md:flex text-gray-600 dark:text-slate-200 h-screen md:h-auto"
+      class="items-center w-full md:w-auto hidden md:flex text-gray-600 dark:text-slate-200 h-screen md:h-auto bg-slate-200 dark:bg-slate-800"
       aria-label="Main navigation"
       id="menu"
     >
@@ -59,7 +59,7 @@ const {} = Astro.props;
         <div class="hidden items-center mr-3 md:flex">
           <button
             type="button"
-            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
             aria-label="Toggle between Dark and Light mode"
             data-aw-toggle-color-scheme
           >
