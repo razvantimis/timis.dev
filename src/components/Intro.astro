@@ -1,0 +1,33 @@
+---
+import { Image, Picture } from "@astrojs/image/components";
+import Icon from "astro-icon";
+import SocialProfileItem from "./SocialProfileItem.astro";
+---
+
+<div
+  class="flex flex-col items-center h-full justify-center aos-init aos-animate"
+>
+  <Image
+    alt="Me"
+    src="/images/me.jpeg"
+    width={280}
+    aspectRatio="3/4"
+    class="rounded-full w-[250px] h-[250px] 2xl:w-[280px] 2xl:h-[280px]"
+  />
+  <h2 class="mt-6 mb-1 text-5xl font-semibold dark:text-white">Razvan Timis</h2>
+  <p class="mb-4 text-[#7B7B7B]">Frontend Developer</p>
+  <ul class="flex flex-row space-x-4">
+    <SocialProfileItem title="Github" url="https://github.com/razvantimis">
+      <Icon class="w-8" name="ant-design:github-outlined" />
+    </SocialProfileItem>
+    <SocialProfileItem title="Linkedin" url="https://www.linkedin.com/in/razvantimis/">
+      <Icon class="w-8" name="ant-design:linkedin-outlined" />
+    </SocialProfileItem>
+    <SocialProfileItem title="Email" url="mailto:r@timis.dev">
+      <Icon class="w-8" name="ant-design:mail-outlined" />
+    </SocialProfileItem>
+    <SocialProfileItem title="My CV" url="#">
+      <Icon class="w-8" name="ant-design:link-outlined" />
+    </SocialProfileItem>
+  </ul>
+</div>

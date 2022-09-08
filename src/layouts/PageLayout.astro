@@ -5,9 +5,9 @@ import Header from "~/components/Header.astro";
 const { title } = Astro.props;
 ---
 
-<Layout title={title}>
+<Layout meta={{ title }}>
   <Header />
-  <main>
+  <main class="flex flex-col h-full w-full">
     <slot />
   </main>
   <!-- <Footer /> -->
