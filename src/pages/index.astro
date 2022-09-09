@@ -1,10 +1,14 @@
 ---
-import Intro from '~/components/Intro.astro'
-import Layout from '~/layouts/PageLayout.astro';
+import Intro from "~/components/Intro.astro";
+import Layout from "~/layouts/PageLayout.astro";
 ---
 
-<Layout title="Welcome to Astro">
-    <Intro />
-
+<Layout
+	meta={{
+		title: "Razvan Timis - Frontend developer",
+		description:
+			"I am Razvan Timis, a frontend developer with 6+ years of experience in building software solutions",
+	}}
+>
+	<Intro />
 </Layout>
-

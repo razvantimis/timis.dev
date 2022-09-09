@@ -1,25 +1,38 @@
 ---
-import { SITE } from "~/config.mjs";
 import BasicScripts from "~/components/BasicScripts.astro";
 export interface Props {
 	meta: {
 		title: string;
+		description: string;
 	};
 }
 
 const {
-	meta: { title },
+	meta: { title, description },
 } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="motion-safe:scroll-smooth md:text-[20px] 2xl:text-[24px]">
+<html
+	lang="en"
+	class="motion-safe:scroll-smooth md:text-[20px] 2xl:text-[24px]"
+>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title} - {SITE.name}</title>
+		<title>{title}</title>
+		<meta content={description} name="description" >
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+		<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#00aba9" />
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<meta name="theme-color" content="#e2e8f0" />
+		<meta name="color-scheme" content="light dark" />
 	</head>
 	<body
 		class="flex flex-col h-[100vh] w-full antialiased text-gray-900 dark:text-slate-300 tracking-tight bg-slate-200 dark:bg-slate-800"

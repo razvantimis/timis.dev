@@ -1,11 +1,13 @@
 ---
-import Layout from "~/layouts/BaseLayout.astro";
+import Layout, { Props as LayoutProps } from "~/layouts/BaseLayout.astro";
 import Header from "~/components/Header.astro";
 // import Footer from "~/components/widgets/Footer.astro";
-const { title } = Astro.props;
+
+export type Props = LayoutProps;
+const { meta  } = Astro.props;
 ---
 
-<Layout meta={{ title }}>
+<Layout meta={meta}>
   <Header />
   <main class="flex flex-col h-full w-full">
     <slot />
