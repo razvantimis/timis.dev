@@ -19,10 +19,13 @@ const { name, email, phone, img } = Astro.props;
     <div class="flex justify-end">
       <ul class="flex mt-4 flex-col">
         <li>
-          <span class="font-bold">E-mail:</span> {email}
+          <span class="font-bold">E-mail:</span> <a href={`mailto:${email}`}>{email}</a>
         </li>
         <li>
-          <span class="font-bold">Phone:</span> {phone}
+          <span class="font-bold">Phone:</span> <a href={`tel:${phone}`}>{phone}</a>
+        </li>
+        <li>
+          <span class="font-bold">Github:</span> <a href="https://github.com/razvantimis">github.com/razvantimis</a>
         </li>
       </ul>
     </div>
