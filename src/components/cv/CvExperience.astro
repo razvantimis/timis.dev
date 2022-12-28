@@ -1,0 +1,27 @@
+---
+const { title, subTitle, startDate, endDate } = Astro.props;
+---
+
+<style is:global>
+  article > .cv-experience-content ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+  }
+</style>
+<style>
+  article ~ article {
+    margin-top: 1.5rem;
+  }
+</style>
+<article class="flex flex-1 flex-col">
+  <header class="flex flex-row justify-between">
+    <div class="flex flex-col">
+      <h1 class="font-bold">{title}</h1>
+      {subTitle && (<h2>{subTitle}</h2>)}
+    </div>
+    <time class="font-bold">{startDate} - {endDate}</time>
+  </header>
+  <div class="cv-experience-content mt-1">
+    <slot />
+  </div>
+</article>

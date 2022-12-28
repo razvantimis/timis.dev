@@ -1,0 +1,183 @@
+---
+layout: ../layouts/ResumeLayout.astro
+title: Razvan Timis - Senior Software Engineer
+description: I am Razvan Timis, a senior software engineer with 8+ years of experience in building software solutions
+---
+import Layout from "~/layouts/ResumeLayout.astro";
+import getYearsOfExperince from "~/utils/getYearsOfExperince";
+import CvHeader from "~/components/cv/CvHeader.astro";
+import CvSection from "~/components/cv/CvSection.astro";
+import CvExperience from "~/components/cv/CvExperience.astro";
+
+<CvHeader
+  img="/images/me.jpeg"
+  name="Razvan Timis"
+  email="r@timis.dev"
+  phone="+40746339070"
+/>
+
+<CvSection title="WORK EXPERIENCE">
+  <CvExperience
+    title="8x8"
+    subTitle="Senior Software Engineer | Full-time"
+    startDate="Aug 2021"
+    endDate="Present"
+  >
+    **Responsibilities**:
+      - Increasing team productivity by adopting storybook and typescript
+      - Develop a internal chat and notification system between call central agents Integrate Bugsnag as monitoring tools
+      - Implement ability to send files via chat ( customer to agent / agent to customer ) Develop WCAG components
+      - Replace a old website embedded chat with a new implementation ( deliver as micro frontend )
+      - Involved in micro frontend implementation via webpack federation
+    <br />
+    **Skills**: WebSocket · Jest · Redux Saga · Team Leadership · React.js
+  </CvExperience>
+
+  <CvExperience
+    title="The Informal School of IT"
+    subTitle="Teacher"
+    startDate="Mar 2020"
+    endDate="Aug 2022"
+  >
+    I teach frontend developer skills to novice peoples.
+    <br />
+
+    **Skills**: JavaScript · React.js · Teaching · HTML5 · Cascading Style Sheets (CSS)
+  </CvExperience>
+  <CvExperience
+    title="Aera Technology"
+    subTitle="Senior Software Engineer | Full-time"
+    startDate="Sep 2019"
+    endDate="Jun 2021"
+  >
+   I've worked on few modules of Aera product. One of them is modeling where we builded a google sheets for client's data. It was very challenging because we should take care of performance because we handle billions of data records.
+   <br />
+   I had next key accomplishments::
+  - Leading the typescript adoption
+  - Implement frontend components which can handle billions of data records ( DOM Virtualisation , Lazy loading, optimal data structure )
+  - Develop a code editor for our custom language including smart suggestion ( ANTRL parser )
+  - Help colleges with technical problems and architectural decision
+  - Involved in migration from monolith to micro frontend architecture
+
+    <br />
+  **Skills**: React.js · Jest · Redux observable · SASS · TypeScript
+  </CvExperience>
+   <CvExperience
+    title="Faculty of Mathematics and Computer Science - BBU"
+    subTitle="Associate Teacher"
+    startDate="Oct 2019"
+    endDate="Feb 2020"
+  >
+   I teach fundamentals of programming to first year students.
+    <br />
+  **Skills**: Python (Programming Language) · Teaching
+  </CvExperience>
+  <CvExperience
+    title="Info World"
+    subTitle="Software Engineer | Full-time"
+    startDate="Jun 2017"
+    endDate="Aug 2019"
+  >
+   I've worked on a scheduling application that is being used in Rehabilitation Hospital. After working on the medipedia.ro project, together with 4 juniors. Within these projects I was team lead.
+   <br />
+  On the backend I had next key accomplishments:
+  - Implemented HL7 FHIR® – Fast Healthcare Interoperability Resources
+  - Implement batch/transaction mechanism, this mechanism give the possibility to add/edit/remove more resource by single http request ( https://www.hl7.org/fhir/http.html#transaction )
+  - Implement patch mechanism ( https://www.hl7.org/fhir/http.html#patch )
+  - Implement firebase push notification for FHIR resource
+  - Implement algorithm that generate code based on metadata:
+      - Generate GraphQL Schema classes based on FHIR StructureDefinitions
+  - Map SQL tables to Mongoose schemas conformant to FHIR
+  - Optimize SQL Server and MongoDB queries
+
+    <br />
+  **Skills**: React.js · Node.js · SQL · Jest · Team Leadership · Angular · MongoDB
+  </CvExperience>
+   <CvExperience
+    title="msg systems Romania"
+    subTitle="Software Engineer | Part-time"
+    startDate="Sep 2016"
+    endDate="Mar 2017"
+  >
+  The scope of the project was to create a user interface component, using PatternFly and Vue.js. I've worked quite a lot with Webpack, ES6 and Git.
+    <br />
+  **Skills**: JavaScript · Cascading Style Sheets (CSS) · Vue.js
+  </CvExperience>
+  <CvExperience
+    title="msg systems Romania"
+    subTitle="Software Engineer Internship"
+    startDate="Jun 2016"
+    endDate="Aug 2016"
+  >
+  The training is composed of two parts. The first one is theoretical and it included the theoretical study of : Java Servlet Programming, JSP, Application Servers for application developers, Hibernate, EJB 3, Java Persistence API, Source Code Management, Glassfish, Logging
+<br />
+  The second part of the training was practical and it was represented by a group project. It was a simplified version of Facebook. The tech stack of the project included JavaServer Face with Primeface, JPA, Hibernate & EJB. As a IDE we used Eclipse and as a solution control system we used SVN.
+
+    <br />
+  **Skills**: JavaServer Pages (JSP) · Hibernate · Java
+  </CvExperience>
+
+   <CvExperience
+    title="Freelancer"
+    subTitle="Wordpress Developer | Seasonal"
+    startDate="Jan 2012"
+    endDate="Oct 2014"
+  >
+  I've worked on multiple wordpress themes. Base on customer requirements, I changed or implemented the features of their websites.
+One of them is https://www.startpreventivi.it/
+  <br />
+  I have applied search engine optimization (SEO) and Google AdSense on the websites I've maintained.
+My work environment includes Linux VPS (Centos, Debian) and as hosting software I use Apache.
+    <br />
+  **Skills**:  JavaScript · jQuery · PHP · WordPress · Bootstrap
+  </CvExperience>
+</CvSection>
+<CvSection title="EDUCATION">
+ <CvExperience
+    title="Babes-Bolyai University"
+    subTitle="Faculty of Mathematics & Computer Science"
+    startDate="Oct 2017"
+    endDate="Jul 2019"
+  >
+  Master's degree in Software Engineering
+  </CvExperience>
+   <CvExperience
+    title="Babes-Bolyai University"
+    subTitle="Faculty of Mathematics & Computer Science"
+    startDate="Oct 2014"
+    endDate="Jul 2017"
+  >
+ Bachelor's Degree in Computer Science
+  </CvExperience>
+</CvSection>
+<CvSection title="PERSONAL PROJECTS">
+  <CvExperience
+    title="Education Cloud Platform"
+    startDate="Sep 2018"
+    endDate="Present"
+  >
+  We build a white label elearning platform for pharmacists and seo marketing.
+  <br /> Pharmacy platform: https://elearning.frontlinesolutions.ro/worwag
+  <br /> SEO Marketing platform: https://appsumo.com/products/education-cloud-plus/
+  <br /> Mobile app: https://play.google.com/store/apps/details?id=com.frontline.elearning
+
+   <br /> Frontend: Angular10+  ·  RxJS  ·  GraphQL  ·   Sass  ·  Material UI ·  Firebase ·  Ionic
+   <br /> Backend: Node.js · Typescript · Prisma · Postgress · GraphQL ·  Nexus
+  </CvExperience>
+ <CvExperience
+    title="Primul Medic"
+    startDate="Jan 2020"
+    endDate="Mai 2020"
+  >
+   Build video conference platform for medical purpose - https://primulmedic.com/ 
+   <br /> Demo: https://www.youtube.com/watch?v=hxaGITpQdWg
+
+   <br /> Frontend: Angular12+  ·  RxJS  ·  GraphQL  ·  Bootstrap  ·  Sass  ·  Material UI
+   <br /> Backend: Node.js · Typescript · Nest.js · Postgress · Hasura
+  </CvExperience>
+ 
+</CvSection>
+<CvSection title="OTHER SKILLS">
+Romanian - native speaker
+<br /> English - professional working proficiency
+</CvSection>

@@ -5,7 +5,8 @@ export interface Props {
 	description: string;
 }
 const title = Astro.props.title ?? Astro.props.frontmatter.title;
-const description = Astro.props.description ?? Astro.props.frontmatter.description;
+const description =
+	Astro.props.description ?? Astro.props.frontmatter.description;
 ---
 
 <!DOCTYPE html>
@@ -49,7 +50,7 @@ const description = Astro.props.description ?? Astro.props.frontmatter.descripti
 		<meta name="color-scheme" content="light dark" />
 	</head>
 	<body
-		class="flex flex-col h-[100vh] w-full antialiased text-gray-900 dark:text-slate-300 tracking-tight bg-slate-200 dark:bg-slate-800"
+		class="flex flex-col h-[100vh] w-full antialiased text-gray-900 tracking-tight p-6"
 	>
 		<slot />
 		<BasicScripts />
